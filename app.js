@@ -77,7 +77,7 @@ $$(document).on('click', '.PODATEK', ()=>{
   const el1 = document.querySelector('input.sorce2');
   const el2 = document.querySelector('label.sorce2');
 
-  if(document.querySelector('input.PODATEK').checked){
+  if(values().tax){
     el1.style.display = 'block'; 
     el2.style.display = 'block'; 
   }else{
@@ -90,7 +90,7 @@ $$(document).on('click', '.VAT', ()=>{
   const el1 = document.querySelector('input.sorce3');
   const el2 = document.querySelector('label.sorce3');
 
-  if(document.querySelector('input.VAT').checked){
+  if(values().vat){
     el1.style.display = 'block'; 
     el2.style.display = 'block'; 
   }else{
